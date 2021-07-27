@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+.top-background {
+  background-color: hsl(225, 100%, 98%);
+  height: 15.25rem;
+  width: 100%;
+  position: absolute;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  padding: 0 10% 0 10%;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-titles {
   display: flex;
   flex-direction: column;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: hsl(230, 17%, 14%);
+  margin: 1.125rem 0;
+}
+
+.header-subtitle {
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 44%);
+}
+
+.toggle {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.375rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.625rem;
 }
 
-.App-link {
-  color: #61dafb;
+.toggle-text {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: hsl(228, 12%, 44%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.big-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 1.875rem;
+  margin: 1.5625rem 0;
+}
+
+.small-cards-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: hsl(228, 12%, 44%);
+}
+
+.small-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 1.875rem;
+  grid-row-gap: 1.5625rem;
+  margin: 1.5625rem 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

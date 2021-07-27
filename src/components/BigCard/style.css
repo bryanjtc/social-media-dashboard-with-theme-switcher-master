@@ -1,0 +1,83 @@
+.big-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.3125rem;
+  background-color: hsl(227, 47%, 96%);
+  padding: 1.25rem;
+  border-top: 0.3125rem solid transparent;
+  align-items: center;
+}
+
+.big-card-social {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+
+.big-card-image {
+  width: 1.25rem;
+  height: 1.25rem;
+  object-fit: contain;
+}
+
+.big-card.facebook {
+  border-color: hsl(208, 92%, 53%);
+}
+
+.big-card.twitter {
+  border-color: hsl(203, 89%, 53%);
+}
+
+.big-card.instagram {
+  background: linear-gradient(hsl(227, 47%, 96%), hsl(227, 47%, 96%))
+      padding-box,
+    linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
+}
+
+.big-card.youtube {
+  border-color: hsl(348, 97%, 39%);
+}
+
+.big-card:hover {
+  background-color: #e1e4f0;
+  cursor: pointer;
+}
+
+.big-card-username {
+  margin: 0;
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: hsl(230, 17%, 14%);
+}
+
+.big-card-numbers {
+  margin: 0;
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: hsl(230, 17%, 14%);
+  letter-spacing: -0.125rem;
+}
+
+.big-card-medium-title {
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.3125rem;
+  color: hsl(228, 12%, 44%);
+  margin-bottom: 1.25rem;
+}
+
+.big-card-small-text {
+  margin: 0;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.big-card-small-text.red {
+  color: hsl(356, 69%, 56%);
+}
+
+.big-card-small-text.green {
+  color: hsl(163, 72%, 41%);
+}
