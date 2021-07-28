@@ -8,9 +8,17 @@
   align-items: flex-end;
 }
 
+.small-card.dark {
+  background-color: hsl(228, 28%, 20%);
+}
+
 .small-card:hover {
   background-color: #e1e4f0;
   cursor: pointer;
+}
+
+.small-card.dark:hover {
+  background-color: #333a55;
 }
 
 .small-card-left {
@@ -25,10 +33,18 @@
   margin-bottom: 1.25rem;
 }
 
+.small-card-title.dark {
+  color: hsl(228, 34%, 66%);
+}
+
 .small-card-numbers {
   font-weight: bold;
   font-size: 2rem;
   color: hsl(230, 17%, 14%);
+}
+
+.small-card-numbers.dark {
+  color: hsl(0, 0%, 100%);
 }
 
 .small-card-right {
@@ -45,11 +61,17 @@
   object-fit: contain;
 }
 
+.small-card-small-text-container{
+  display: flex;
+  flex-direction: row;
+  gap: 0.1875rem;
+  align-items: center;
+}
+
 .small-card-small-text {
   margin: 0;
   font-weight: bold;
   font-size: 0.75rem;
-  color: hsl(163, 72%, 41%);
 }
 
 .small-card-small-text.green {
@@ -58,4 +80,10 @@
 
 .small-card-small-text.red {
   color: hsl(356, 69%, 56%);
+}
+
+@media screen and (max-width: 26.625rem) {
+  .small-card-right {
+    gap: 2.5rem;
+  }
 }
