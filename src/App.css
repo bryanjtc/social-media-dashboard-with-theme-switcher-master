@@ -109,7 +109,15 @@
   padding-bottom: 1.125rem;
 }
 
+.attribution a{
+  color: hsl(230, 17%, 14%);
+}
+
 .attribution.dark {
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution.dark a {
   color: hsl(0, 0%, 100%);
 }
 
