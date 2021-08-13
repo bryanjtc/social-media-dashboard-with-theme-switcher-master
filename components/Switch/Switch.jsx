@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import "./style.css";
-import { ThemeContext } from "../../ThemeContext";
+import styles from "./Switch.module.css";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Switch = () => {
   const theme = useContext(ThemeContext);
@@ -14,9 +14,11 @@ const Switch = () => {
     }
   };
   return (
-    <label className="switch" onChange={onChange}>
-      <input type="checkbox" />
-      <span className={`slider ${darkMode ? "dark" : ""}`}></span>
+    <label className={styles.switch} onChange={onChange}>
+      <input type="checkbox" aria-label="toggle" />
+      <span
+        className={`${styles.slider} ${darkMode ? `${styles.dark}` : ""}`}
+      ></span>
     </label>
   );
 };

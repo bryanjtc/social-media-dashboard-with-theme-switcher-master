@@ -1,4 +1,4 @@
-.big-card {
+.big_card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,80 +9,80 @@
   align-items: center;
 }
 
-.big-card-dark {
+.big_card_dark {
   background-color: hsl(228, 28%, 20%);
 }
 
-.big-card-social {
+.big_card_social {
   display: flex;
   flex-direction: row;
   gap: 0.625rem;
   margin-bottom: 1.25rem;
 }
 
-.big-card-image {
+.big_card_image {
   width: 1.25rem;
   height: 1.25rem;
   object-fit: contain;
 }
 
-.big-card.facebook {
+.big_card.facebook {
   border-color: hsl(208, 92%, 53%);
 }
 
-.big-card.twitter {
+.big_card.twitter {
   border-color: hsl(203, 89%, 53%);
 }
 
-.big-card.instagram {
+.big_card.instagram {
   background: linear-gradient(hsl(227, 47%, 96%), hsl(227, 47%, 96%))
       padding-box,
     linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
 }
 
-.big-card.instagram:hover {
+.big_card.instagram:hover {
   background: linear-gradient(#e1e4f0, #e1e4f0)
       padding-box,
     linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
 }
 
-.big-card-dark.instagram {
+.big_card_dark.instagram {
   background: linear-gradient(hsl(228, 28%, 20%), hsl(228, 28%, 20%))
       padding-box,
     linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
 }
 
-.big-card-dark.instagram:hover {
+.big_card_dark.instagram:hover {
   background: linear-gradient(#333a55, #333a55)
       padding-box,
     linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
 }
 
-.big-card.youtube {
+.big_card.youtube {
   border-color: hsl(348, 97%, 39%);
 }
 
-.big-card:hover {
+.big_card:hover {
   background-color: #e1e4f0;
   cursor: pointer;
 }
 
-.big-card-dark:hover {
+.big_card_dark:hover {
   background-color: #333a55;
 }
 
-.big-card-username {
+.big_card_username {
   margin: 0;
   font-weight: bold;
   font-size: 0.75rem;
   color: hsl(228, 12%, 44%);
 }
 
-.big-card-username.dark {
+.big_card_username.dark {
   color: hsl(228, 34%, 66%);
 }
 
-.big-card-numbers {
+.big_card_numbers {
   margin: 0;
   font-weight: bold;
   font-size: 3.5rem;
@@ -90,11 +90,11 @@
   letter-spacing: -0.125rem;
 }
 
-.big-card-numbers.dark {
+.big_card_numbers.dark {
   color: hsl(0, 0%, 100%);
 }
 
-.big-card-medium-title {
+.big_card_medium_title {
   margin: 0;
   font-size: 0.7rem;
   letter-spacing: 0.3125rem;
@@ -102,27 +102,35 @@
   margin-bottom: 1.25rem;
 }
 
-.big-card-medium-title.dark {
+.big_card_medium_title.dark {
   color: hsl(228, 34%, 66%);
 }
 
-.big-card-small-text-container{
+.big_card_small_text_container{
   display: flex;
   flex-direction: row;
   gap: 0.1875rem;
   align-items: center;
 }
 
-.big-card-small-text {
+.big_card_small_text {
   margin: 0;
   font-weight: bold;
   font-size: 0.75rem;
 }
 
-.big-card-small-text.red {
+.big_card_small_text.red {
   color: hsl(356, 69%, 56%);
 }
 
-.big-card-small-text.green {
+.big_card_small_text.green {
   color: hsl(163, 72%, 41%);
+}
+
+.big_card_small_text.darkgreen{
+  color:#115A3F
+}
+
+.big_card_small_text.darkred {
+  color: #9F1D26;
 }
