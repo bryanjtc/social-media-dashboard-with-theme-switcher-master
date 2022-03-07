@@ -17,7 +17,5 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: fastify/github-action-merge-dependabot@v2.5.0
-        with:
-          target: minor
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Merge
+        uses: KeisukeYamashita/auto-renovate-pull-request-merge@v1
